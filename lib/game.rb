@@ -22,6 +22,8 @@ attr_reader :player_1, :player_2, :counter
      @player_1.receive_damage
      @counter += 1
    end
+
+   
   end
 
 

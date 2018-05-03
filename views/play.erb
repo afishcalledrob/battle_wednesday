@@ -46,23 +46,11 @@
       <p class="name" id="player1"><%= @game.player_1.name %></p>
       <p class="name" id="player2"><%= @game.player_2.name %></p>
     </div>
+    <%= @game.player_1.name %>:  <%= @game.player_1.hp %>HP,
+    <%= @game.player_2.name %>:  <%= @game.player_2.hp%>HP
 
+    <form action="/attack">
+      <input type="submit" value="Attack">
+    </form>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-<%= @game.player_1.name %>:  <%= @game.player_1.hp %>HP,
-<%= @game.player_2.name %>:  <%= @game.player_2.hp%>HP
-
-<form action="/attack">
-  <input type="submit" value="Attack">
-</form>
