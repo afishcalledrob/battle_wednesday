@@ -6,6 +6,14 @@ attr_reader :player_1, :player_2, :counter
     @counter = 1
   end
 
+  def self.game_start(player1, player2)
+    @game = Game.new(player1, player2)
+  end
+
+  def self.game
+    @game
+  end
+
   def attack
     if @counter.odd?
      @player_2.receive_damage
