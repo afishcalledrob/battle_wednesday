@@ -1,4 +1,8 @@
+<% if @game.counter.even? %>
 <%= @game.player_1.name %> attacks <%= @game.player_2.name %>
+<% else %>
+<%= @game.player_2.name %> attacks <%= @game.player_1.name %>
+<% end %>
 <form action="/play" method="get">
   <input type="submit" value="Return to game">
 </form>
