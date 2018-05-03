@@ -1,5 +1,65 @@
-<%= @game.player_1.name %> vs. <%= @game.player_2.name %>
-<br>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Makermon</title>
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+  </head>
+  <style>
+    .header{margin:0 auto;
+    text-align: center;}
+
+    body {text-align: center;}
+
+    h1 {font-family: 'Gugi', cursive;
+        font-size: 40px;}
+
+    .main_area {background-image: url(http://i66.tinypic.com/9gwjv5.jpg);
+                  background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                  width: 1000px;
+                  height: 800px;
+                  	display:block;
+                  	margin:0 auto;
+                  	position:relative;
+                  	line-height:0px;
+                  	text-height:0px}
+
+    .name {font-family: 'Gugi', cursive;
+        font-size: 40px;}
+
+    #player1 {margin-top: 400px;
+                position: absolute;
+              right:200px; }
+
+    #player2 {margin-top: 60px;
+              position: absolute;
+              left:180px; }
+
+  </style>
+  <body>
+    <div class="header">
+    <h1><%= @game.player_1.name %> vs. <%= @game.player_2.name %></h2>
+    </div>
+    <div class="main_area">
+      <p class="name" id="player1"><%= @game.player_1.name %></p>
+      <p class="name" id="player2"><%= @game.player_2.name %></p>
+    </div>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
 <%= @game.player_1.name %>:  <%= @game.player_1.hp %>HP,
 <%= @game.player_2.name %>:  <%= @game.player_2.hp%>HP
 
