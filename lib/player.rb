@@ -8,7 +8,7 @@ class Player
     @hp = DEFAULT_HP
   end
 
-  def attack
+  def receive_damage
     @hp -= DEFAULT_ATTACK
   end
 

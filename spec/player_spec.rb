@@ -11,9 +11,9 @@ describe Player do
      expect(player.hp).to eq Player::DEFAULT_HP
    end
 
-describe '#attack' do
+describe '#receive_damage' do
   it 'reduces health by standard amount' do
-    expect{player.attack}.to change{player.hp}.by(-10)
+    expect{player.receive_damage}.to change{player.hp}.by(-10)
   end
 end
  end
